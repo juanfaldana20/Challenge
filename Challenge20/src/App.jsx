@@ -1,17 +1,18 @@
-
 import './App.css'
+import ComponentApp from "./ComponentApp"
+
+const App=() =>{
 
 
-const App =() =>{
-  return(
-    <>
-    <h1> HOLA MUNDO</h1>
-    </>
-    
-  ) 
+
+  return (
+    <div>
+      <ComponentApp/>
+
+    </div>
+
+  )
 }
 
-
-
-
 export default App
+
