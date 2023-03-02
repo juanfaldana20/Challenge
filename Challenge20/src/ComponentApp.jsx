@@ -1,42 +1,34 @@
-import { useState } from "react"
-import { AddCategory } from "./AddCategory";
-import { GifGrid } from "./GiftGrid";
+import React, { useState } from 'react'
 
+export const ComponentApp=()=> {
+  const [category, setCategory] = useState('Ej: Santo grial ft. Duki')
+  const [categories, setCategories] = useState([])
 
-const defaultValue = []
+  const addCategory = () => {
+    setCategories(list=> [...list, category])
+    setCategory('')
+  }
 
+  const setCategoria = (event) => {
+    setCategory(event.target.value)
+  }
 
-export const ComponentApp = () => {
-const [categories, setCategories] = useState (defaultValue);
-
-
-
-
-const addCategory = (cualquiera) =>{
-   
-    const auxCategories = [ ...categories ]
-    auxCategories.push(cualquiera)
-    setCategories(auxCategories)
-
-
+  return (
+    <div>
+        <h1> Temas Favs del momento</h1>
+      <input type="text" value={category} 
+      onChange={(event)=> setCategoria(event)} />
+      <button onClick={()=> addCategory()}>Add Temardo</button>
+      <ol>
+        {categories.map(
+            (category, key) =>
+            { 
+                return <li key={key}>{category}</li>
+            }
+        )}
+      </ol>
+    </div>
+  )
 }
 
-
-    return(
-        <>
-            <h1>Buscador de gifs</h1>
-            <AddCategory onAddCategory={addCategory}/>
-            <ol>
-                 {
-                    categories.map(
-                        (category, key) =>
-                        {
-                        return <GifGrid category={category} key= {key}/>
-                        }
-                    )
-                }
-            </ol>
-        </>
-    )
-}
 export default ComponentApp
