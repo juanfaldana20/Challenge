@@ -1,5 +1,5 @@
 import './App.css'
-import ComponentApp from "./ComponentApp"
+import FirstApp from './FirstApp'
 
 const App=() =>{
 
@@ -7,7 +7,7 @@ const App=() =>{
 
   return (
     <div>
-      <ComponentApp/>
+      <FirstApp/>
 
     </div>
 

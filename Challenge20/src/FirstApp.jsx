@@ -1,23 +1,14 @@
 import React, { useState } from 'react';
 
-const Counter=() =>{
-  const [count, setCount] = useState(0);
-
-  const sumaDeContador = () => {
-    setCount(count + 1);
-  };
-
-  const reset = () => {
-    setCount(0);
-  };
-
+const FirstApp=() =>{
+  
   return (
     <div>
-      <h1>Counter: {count}</h1>
-      <button onClick={sumaDeContador}>Sumar</button>
-      <button onClick={reset}>Reset</button>
+      <h1>Challenge</h1>
+      <span>10</span>
+     
     </div>
   );
 }
 
-export default Counter;
+export default FirstApp;
