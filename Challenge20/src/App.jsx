@@ -1,5 +1,6 @@
 import './App.css'
 import ComponentApp from "./ComponentApp"
+import { Father } from './Father'
 import { MultipleCustomHooks } from './MultipleCustomHooks'
 
 const App=() =>{
@@ -8,7 +9,7 @@ const App=() =>{
 
   return (
     <div>
-      <MultipleCustomHooks/>
+      <Father/>
 
     </div>
 
