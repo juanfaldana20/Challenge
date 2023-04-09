@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import FirstApp from './FirstApp'
 import './index.css'
+import './intro-reducer'
 
 
 

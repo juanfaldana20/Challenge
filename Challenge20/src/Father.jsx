@@ -11,7 +11,7 @@ export const Father = () => {
 
     return (
         <div>
-            <h1> Father </h1>
+            <h1> Suma de dos en dos </h1>
             <p> Total: {valor} </p>
             <hr />
 
