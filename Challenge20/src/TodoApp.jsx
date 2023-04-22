@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 import { TodoReducer } from "./TodoReducer";
-import { TodoAdd } from "../../TodoAdd";
+import { TodoAdd } from "./TodoAdd";
 import { TodoList } from "./TodoList";
 import { TodoReducer } from "./TodoReducer";
 
